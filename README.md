@@ -39,6 +39,37 @@ In `src/content.js`, edit `theme`:
 - `textDark`
 - `overlay`
 
+## Deploying Changes to GitHub Pages
+
+The live site is hosted at **https://ijimenez013.github.io/wedding-website/**
+
+Every time you make changes, run one command to rebuild and publish:
+
+```bash
+npm run deploy
+```
+
+That command automatically:
+1. Runs `npm run build` to compile the latest code
+2. Pushes the built files to the `gh-pages` branch
+3. GitHub Pages serves the updated site within ~1 minute
+
+### Full workflow
+
+```bash
+# 1. Make your changes (edit src/content.js, src/styles.css, etc.)
+
+# 2. Preview locally to confirm it looks right
+npm run dev
+
+# 3. Deploy to the live site
+npm run deploy
+```
+
+> **Note:** You do not need to `git push` for the site to update — `npm run deploy` handles pushing to the `gh-pages` branch directly. You should still `git push` to keep your source code backed up on the `main` branch.
+
+---
+
 ## VS Code Rendering Options
 
 1. Terminal + browser:
