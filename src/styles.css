@@ -205,7 +205,7 @@ body {
   .hero__image {
     /* Crop controls: tune scale and offsets to match reference framing */
   --img-scale: 1.5;
-  --img-offset-x: 0px;
+  --img-offset-x: -20px;
   --img-offset-y: -270px;
   transform: translate(var(--img-offset-x), var(--img-offset-y)) scale(var(--img-scale));
   transform-origin: center 25%;
