@@ -16,7 +16,7 @@ export const siteContent = {
 		heroImage:
 			"https://melayna-and-israel.my.canva.site/_assets/media/de88c45cb370a3344ffaf773037c00f3.png",
 	},
-	event_password: "melaynaandisrael",
+	event_password: "melayna&israel",
     wedding_website: {
         label: "Wedding Website",
         url: "https://withjoy.com/melayna-and-israel",

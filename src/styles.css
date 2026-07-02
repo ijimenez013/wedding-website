@@ -81,6 +81,8 @@ body {
   font-weight: 500;
   border: 1px solid rgba(255, 255, 255, 0.68);
   border-radius: 999px;
+  background: rgba(20, 13, 8, 0.52);
+  backdrop-filter: blur(6px);
   padding: 0.85rem 1.5rem;
   backdrop-filter: blur(5px);
   transition: background-color 200ms ease, color 200ms ease;
@@ -142,6 +144,8 @@ body {
   font-weight: 500;
   border: 1px solid rgba(255, 255, 255, 0.68);
   border-radius: 999px;
+  background: rgba(20, 13, 8, 0.52);
+  backdrop-filter: blur(6px);
   padding: 0.85rem 1.5rem;
   backdrop-filter: blur(5px);
   transition: background-color 200ms ease, color 200ms ease;
@@ -156,11 +160,29 @@ body {
   gap: 1rem;
 }
 
-.hero__bottom > p {
+.hero__password {
   margin: 0;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  /* border: 1px solid rgba(255, 255, 255, 0.52); */
+  background: rgba(20, 13, 8, 0.52);
+  backdrop-filter: blur(6px);
+  text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.hero__password-label {
+  opacity: 0.88;
+}
+
+.hero__password-value {
+  letter-spacing: 0.24em;
+  font-weight: 700;
 }
 
 .site__footer {
@@ -233,6 +255,14 @@ body {
   .hero__link {
     font-size: 0.74rem;
     letter-spacing: 0.2em;
+  }
+
+  .hero__password {
+    max-width: 100%;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.74rem;
+    letter-spacing: 0.2em;
+    word-break: break-word;
   }
 
   .hero__headline {
