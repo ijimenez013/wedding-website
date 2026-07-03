@@ -35,6 +35,18 @@ root.innerHTML = `
 `;
 
 const style = document.documentElement.style;
+
+const syncAppHeight = () => {
+  const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
+  style.setProperty("--app-height", `${Math.round(viewportHeight)}px`);
+};
+
+syncAppHeight();
+
+window.addEventListener("resize", syncAppHeight);
+window.visualViewport?.addEventListener("resize", syncAppHeight);
+window.addEventListener("orientationchange", syncAppHeight);
+
 style.setProperty("--color-primary", theme.primary);
 style.setProperty("--color-accent", theme.accent);
 style.setProperty("--color-text", theme.text);
