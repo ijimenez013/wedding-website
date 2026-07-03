@@ -23,4 +23,4 @@
     </section>
 
   </main>
-`;var r=document.documentElement.style;r.setProperty(`--color-primary`,t.primary),r.setProperty(`--color-accent`,t.accent),r.setProperty(`--color-text`,t.text),r.setProperty(`--color-text-dark`,t.textDark),r.setProperty(`--color-overlay`,t.overlay);
+`;var r=document.documentElement.style,i=()=>{let e=window.visualViewport?.height??window.innerHeight;r.setProperty(`--app-height`,`${Math.round(e)}px`)};i(),window.addEventListener(`resize`,i),window.visualViewport?.addEventListener(`resize`,i),window.addEventListener(`orientationchange`,i),r.setProperty(`--color-primary`,t.primary),r.setProperty(`--color-accent`,t.accent),r.setProperty(`--color-text`,t.text),r.setProperty(`--color-text-dark`,t.textDark),r.setProperty(`--color-overlay`,t.overlay);
