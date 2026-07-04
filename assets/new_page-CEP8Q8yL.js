@@ -1,6 +1,9 @@
 import{n as e,t}from"./content-DCzG6AAN.js";var n=document.querySelector(`#app`);if(!n)throw Error(`Root element was not found.`);n.innerHTML=`
   <main class="invite" aria-label="Wedding invitation">
-    <img class="invite__image" src="https://media.canva.com/v2/image-resize/format:PNG/height:1600/quality:100/uri:ifs%3A%2F%2FM%2F34d0a663-6e68-4418-8481-ac9c1ce4aaae/watermark:F/width:900?csig=AAAAAAAAAAAAAAAAAAAAALZIIlVS0VqIY_eMXMo9x7ft8LQy3ywz6uDIVW33blep&exp=1783139269&osig=AAAAAAAAAAAAAAAAAAAAADhuay0e7SjC5N-bgFC4rl9D-IhylloQHCAq4vLb_Tza&signer=media-rpc&x-canva-quality=screen_2x" alt="Israel and Melayna on the beach" />
+    <picture>
+      <source media="(min-width: 761px)" srcset="${t.media.heroImage}" />
+      <img class="invite__image" src="https://media.canva.com/v2/image-resize/format:PNG/height:1600/quality:100/uri:ifs%3A%2F%2FM%2F34d0a663-6e68-4418-8481-ac9c1ce4aaae/watermark:F/width:900?csig=AAAAAAAAAAAAAAAAAAAAALZIIlVS0VqIY_eMXMo9x7ft8LQy3ywz6uDIVW33blep&exp=1783139269&osig=AAAAAAAAAAAAAAAAAAAAADhuay0e7SjC5N-bgFC4rl9D-IhylloQHCAq4vLb_Tza&signer=media-rpc&x-canva-quality=screen_2x" alt="Israel and Melayna on the beach" />
+    </picture>
     <div class="invite__overlay"></div>
 
     <div class="invite__content">
@@ -25,12 +28,6 @@ import{n as e,t}from"./content-DCzG6AAN.js";var n=document.querySelector(`#app`)
         <a class="invite__button invite__button--primary" href="${t.cta.url}" target="_blank" rel="noreferrer">${t.cta.label}</a>
 
         <p class="invite__password">
-          <span class="invite__icon">
-  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-    <rect x="5" y="10.5" width="14" height="9.5" rx="2"></rect>
-    <path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"></path>
-  </svg>
-</span>
           <span>Password: ${t.event_password}</span>
         </p>
 
