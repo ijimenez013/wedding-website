@@ -1,0 +1,259 @@
+:root {
+  --np-gold: #d8b171;
+  --np-cream: #f5efe7;
+  --app-height: 100dvh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #071320;
+  color: var(--np-cream);
+}
+
+#app {
+  min-height: 100%;
+}
+
+.invite {
+  position: relative;
+  min-height: 100vh;
+  min-height: var(--app-height);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.invite__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+@media (max-width: 760px) {
+  .invite__image {
+    filter: brightness(0.7) saturate(1.18) sepia(0.22) hue-rotate(-8deg);
+  }
+}
+
+.invite__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.invite__content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 560px);
+  min-height: 100vh;
+  min-height: var(--app-height);
+  padding: clamp(2.6rem, 7vh, 4.4rem) clamp(1.4rem, 6vw, 2.4rem) clamp(2rem, 5vh, 3.2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  animation: np-rise-in 900ms ease-out both;
+}
+
+.invite__top {
+  display: grid;
+  justify-items: center;
+  gap: 1.3rem;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.invite__names {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: clamp(2.8rem, 11vw, 4.4rem);
+  line-height: 0.98;
+  letter-spacing: 0.01em;
+}
+
+.invite__divider,
+.invite__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  width: 100%;
+  color: var(--np-gold);
+}
+
+.invite__divider::before,
+.invite__divider::after {
+  content: "";
+  height: 1px;
+  width: min(34%, 7rem);
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.invite__ornament::before,
+.invite__ornament::after {
+  content: "";
+  height: 1px;
+  width: min(30%, 5rem);
+  background: currentColor;
+  opacity: 0.55;
+}
+
+.invite__heart,
+.invite__leaf {
+  display: inline-flex;
+  color: var(--np-gold);
+}
+
+.invite__heart {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.invite__leaf {
+  width: 3.2rem;
+  height: 1.4rem;
+}
+
+.invite__heart svg,
+.invite__leaf svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.invite__headline {
+  margin: 0;
+  font-size: clamp(0.95rem, 3.4vw, 1.15rem);
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+}
+
+.invite__details {
+  display: grid;
+  gap: 0.9rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.invite__detail {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: clamp(0.82rem, 3vw, 1rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.invite__icon {
+  display: inline-flex;
+  width: 1.05rem;
+  height: 1.05rem;
+  flex: none;
+  color: var(--np-gold);
+}
+
+.invite__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.invite__sep {
+  margin: 0 0.5rem;
+  color: var(--np-gold);
+}
+
+.invite__bottom {
+  display: grid;
+  justify-items: center;
+  gap: 1.15rem;
+  width: 100%;
+}
+
+.invite__button {
+  width: min(100%, 22rem);
+  border-radius: 999px;
+  padding: 1.05rem 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: clamp(0.82rem, 3vw, 0.98rem);
+  font-weight: 600;
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+
+.invite__button--primary {
+      background: rgba(8, 15, 26, 0.25);
+color: var(--np-cream);
+  /* background: var(--np-gold); */
+  /* color: #3a2a12; */
+  border: 1px solid var(--np-gold);
+}
+
+.invite__button--primary:hover {
+  background: #e2c088;
+}
+
+.invite__button--ghost {
+  background: rgba(8, 15, 26, 0.25);
+  color: var(--np-cream);
+  border: 1px solid var(--np-gold);
+}
+
+.invite__button--ghost:hover {
+  background: rgba(216, 177, 113, 0.16);
+}
+
+.invite__password {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--np-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: clamp(0.72rem, 2.6vw, 0.84rem);
+}
+
+.invite__ornament {
+  margin-top: 0.4rem;
+}
+
+@keyframes np-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
