@@ -13,13 +13,13 @@ export const siteContent = {
 		venue: "El Adobe de Capistrano",
 	},
 	newPage: {
-		backgroundImage: "4ea56ee6-299c-4f4b-a7da-09675e9cb65c.png",
+		mobileBackgroundImage: "mobileBackgroundImage.png",
 		date: "September 19, 2026",
 		time: "6:00 PM",
 	},
 	media: {
 		heroImage:
-			"https://melayna-and-israel.my.canva.site/_assets/media/de88c45cb370a3344ffaf773037c00f3.png",
+			"desktopBackgroundImage.png",
 	},
 	event_password: "melayna&israel",
     wedding_website: {

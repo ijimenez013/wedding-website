@@ -44,14 +44,11 @@ const leafIcon = `
   </svg>
 `;
 
-const backgroundUrl = "https://media.canva.com/v2/image-resize/format:PNG/height:1600/quality:100/uri:ifs%3A%2F%2FM%2F34d0a663-6e68-4418-8481-ac9c1ce4aaae/watermark:F/width:900?csig=AAAAAAAAAAAAAAAAAAAAALZIIlVS0VqIY_eMXMo9x7ft8LQy3ywz6uDIVW33blep&exp=1783139269&osig=AAAAAAAAAAAAAAAAAAAAADhuay0e7SjC5N-bgFC4rl9D-IhylloQHCAq4vLb_Tza&signer=media-rpc&x-canva-quality=screen_2x"
-// const backgroundUrl = `${import.meta.env.BASE_URL}${siteContent.newPage.backgroundImage}`;
-
 root.innerHTML = `
   <main class="invite" aria-label="Wedding invitation">
     <picture>
       <source media="(min-width: 761px)" srcset="${siteContent.media.heroImage}" />
-      <img class="invite__image" src="${backgroundUrl}" alt="Israel and Melayna on the beach" />
+      <img class="invite__image" src="${siteContent.newPage.mobileBackgroundImage}" alt="Israel and Melayna on the beach" />
     </picture>
     <div class="invite__overlay"></div>
 
