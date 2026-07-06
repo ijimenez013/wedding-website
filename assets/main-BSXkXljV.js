@@ -8,7 +8,7 @@ import{n as e,t}from"./content-CA8WiNoj.js";var n=document.querySelector(`#app`)
 
     <div class="invite__content">
       <div class="invite__top">
-        <h1 class="invite__names">${t.couple.firstName} &amp; ${t.couple.secondName}</h1>
+        <h1 class="hero-title">${t.couple.firstName} &amp; ${t.couple.secondName}</h1>
 
 
         <p class="invite__headline">${t.couple.heading}</p>
