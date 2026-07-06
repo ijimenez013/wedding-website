@@ -234,12 +234,17 @@ color: var(--np-cream);
   margin: 0;
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  color: var(--np-gold);
+  gap: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(9, 16, 28, 0.55);
+  backdrop-filter: blur(6px);
+  color: var(--np-cream);
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.16em;
   font-weight: 600;
-  font-size: clamp(0.72rem, 2.6vw, 0.84rem);
+  font-size: clamp(0.78rem, 2.8vw, 0.9rem);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .invite__ornament {
