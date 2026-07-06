@@ -20,6 +20,14 @@ body {
   color: var(--np-cream);
 }
 
+.hero-title {
+    margin: 0;
+    font-family: "Pinyon Script", cursive;
+    font-size: clamp(3.36rem, 8vw, 5rem);
+    font-weight: 400;
+    color: #F7F1E3;
+}
+
 #app {
   min-height: 100%;
 }
@@ -56,7 +64,7 @@ body {
 .invite__content {
   position: relative;
   z-index: 1;
-  width: min(100%, 560px);
+  width: min(100%, 662px);
   min-height: 100vh;
   min-height: var(--app-height);
   padding: clamp(2.6rem, 7vh, 4.4rem) clamp(1.4rem, 6vw, 2.4rem) clamp(2rem, 5vh, 3.2rem);
@@ -74,7 +82,7 @@ body {
   justify-items: center;
   gap: 1.3rem;
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .invite__names {

@@ -54,7 +54,7 @@ root.innerHTML = `
 
     <div class="invite__content">
       <div class="invite__top">
-        <h1 class="invite__names">${siteContent.couple.firstName} &amp; ${siteContent.couple.secondName}</h1>
+        <h1 class="hero-title">${siteContent.couple.firstName} &amp; ${siteContent.couple.secondName}</h1>
 
 
         <p class="invite__headline">${siteContent.couple.heading}</p>
