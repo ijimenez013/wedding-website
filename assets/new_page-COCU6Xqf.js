@@ -1,4 +1,4 @@
-import{n as e,t}from"./content-Bfu8k_Gg.js";var n=document.querySelector(`#app`);if(!n)throw Error(`Root element was not found.`);n.innerHTML=`
+import{n as e,t}from"./content-CffW5R0M.js";var n=document.querySelector(`#app`);if(!n)throw Error(`Root element was not found.`);n.innerHTML=`
   <main class="site" aria-label="Wedding website">
     <section class="hero" aria-label="Hero section">
       <img class="hero__image" src="${t.media.heroImage}" alt="Israel and Melayna" />
