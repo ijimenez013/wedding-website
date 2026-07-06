@@ -22,6 +22,7 @@ root.innerHTML = `
         <div class="hero__bottom">
           <a class="hero__rsvp" href="${siteContent.cta.url}" target="_blank" rel="noreferrer">${siteContent.cta.label}</a>
           <a class="hero__link" href="${siteContent.wedding_website.url}" target="_blank" rel="noreferrer">${siteContent.wedding_website.label}</a>
+          <p class="hero__password"><span class="hero__password-label">Password:</span> <span class="hero__password-value">${siteContent.event_password}</span></p>
           <div class="hero__meta">
             <p class="hero__datetime">${siteContent.event.dateTime}</p>
             <p class="hero__venue">${siteContent.event.venue}</p>
@@ -34,6 +35,18 @@ root.innerHTML = `
 `;
 
 const style = document.documentElement.style;
+
+const syncAppHeight = () => {
+  const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
+  style.setProperty("--app-height", `${Math.round(viewportHeight)}px`);
+};
+
+syncAppHeight();
+
+window.addEventListener("resize", syncAppHeight);
+window.visualViewport?.addEventListener("resize", syncAppHeight);
+window.addEventListener("orientationchange", syncAppHeight);
+
 style.setProperty("--color-primary", theme.primary);
 style.setProperty("--color-accent", theme.accent);
 style.setProperty("--color-text", theme.text);
